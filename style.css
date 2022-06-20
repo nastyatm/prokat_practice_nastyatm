@@ -1,0 +1,487 @@
+.container {
+    font-family: "Roboto";
+    font-style: normal;
+    max-width: 100%;
+    min-height: 720px;
+    position: relative;
+    padding-bottom: 111px;
+}
+
+body {
+    background-color:#1C1C1C;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 54px;
+}
+
+.label__logo {
+    height: 28px;
+    width: 148px;
+}
+
+.scroll .search-box {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 74px;
+    z-index: 100;
+}
+
+.scroll .search-form__lupa {
+    position: absolute;
+    border: none;
+    background-image: url(images/lupa.png);
+    background-color: transparent;
+    width: 34px;
+    height: 33px;
+    bottom: 18px;
+    left: 80px;
+    margin-left: 80px;
+}
+
+.scroll .search-form__input {
+    position: absolute;
+    border: none;
+    background-image: url(images/lupa.png);
+    background-color: transparent;
+    width: 34px;
+    height: 33px;
+    bottom: 18px;
+    left: 80px;
+    margin-left: 70px;
+}
+
+.search-form {
+    position: relative;
+    margin: 0 auto;
+    width: 628px;
+    height: 74px;
+    border-bottom: solid 2px white; 
+}
+
+.search_active .search-form {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    height: 74px;
+    border-bottom: solid 2px #FDCE25; 
+    justify-content: start;
+}
+
+.search-form__lupa {
+    position: absolute;
+    border: none;
+    background-image: url(images/lupa.png);
+    background-color: transparent;
+    width: 34px;
+    height: 33px;
+    bottom: 18px;
+    left: 71px;
+}
+
+.search_active .search-form__lupa {
+    position: absolute;
+    border: none;
+    background-image: url(images/lupa.png);
+    background-color: transparent;
+    width: 34px;
+    height: 33px;
+    bottom: 20px;
+    left: 8px;
+}
+
+.search-form__input {
+    border: none;
+    position: absolute;
+    background: transparent;
+    width: 446px;
+    height: 36px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    align-items: center;
+    color: white;
+    bottom: 20px;
+    left: 119px;
+}
+
+.search_active .search-form__input {
+    border: none;
+    position: absolute;
+    background: transparent;
+    width: 446px;
+    height: 36px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    align-items: center;
+    color: white;
+    bottom: 20px;
+    left: 60px;
+}
+
+.close {
+    width: 27px;
+    height: 27px;
+}
+
+.search-form__close {
+    display: none;
+}
+
+.search_not_found .search-form__close:hover {
+    background-image: url(images/close_active.png);
+    cursor: pointer;
+}
+
+.search_live .search-form__close:hover {
+    background-image: url(images/close_active.png);
+    cursor: pointer;
+}
+
+.scroll .search-form__close:hover {
+    background-image: url(images/close_active.png);
+    cursor: pointer;
+}
+
+.search_live .search-form__close {
+    display: block;
+    border: none;
+    background-image: url(images/close.png);
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 0px;
+    bottom: 11px;
+}
+
+.search_not_found .search-form__close {
+    display: block;
+    border: none;
+    background-image: url(images/close.png);
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 0px;
+    bottom: 11px;
+}
+
+.help {
+    display: none;
+}
+
+.search_active .help {
+    display: block;
+    padding-top: 24px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.search_more_history .help {
+    display: none;
+}
+
+.help__hints {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 16px;
+    padding-left: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px; 
+    color: rgba(0, 0, 0, 0.8); 
+}
+
+.help__hints:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.help_more_history {
+    display: none;
+}
+
+.search_more_history .help_more_history {
+    display: block;
+    padding-top: 24px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.result_found {
+    display: block;
+    padding-top: 106px;
+    margin: 0 auto;
+    width: 1280px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    padding-bottom: 24px;
+}
+
+.scroll .result_found {
+    display: block;
+    padding-top: 106px;
+    margin: 0 auto;
+    width: 1280px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    padding-bottom: 24px;
+}
+
+.no-results {
+    display: none;
+}
+
+.search_not_found .no-results {
+    display: block;
+    padding-top: 106px;
+    margin: 0 auto;
+    width: 1280px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    padding-bottom: 36px;
+}
+
+.flex_container {
+    display: grid;
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: scroll;
+    flex-direction: row;
+    height: auto;
+    grid-template-columns: repeat(4, 302px);
+    gap: 24px;
+}
+
+.box {
+    position: relative;
+    height: 454px;
+    width: 302px;
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col {
+    width: 25%;
+    padding-top: 24px;
+    box-sizing: border-box;
+ }
+
+.film {
+    position: relative;
+	width: 100%;
+}
+
+.scroll .label {
+    display: none;
+}
+
+.scroll .flex_container{
+    display: flex;
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: scroll;
+    flex-direction: row;
+    height: auto;
+}
+
+.scroll .search-form {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 74px;
+    border-bottom: solid 2px white; 
+    background: rgba(28, 28, 28, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    padding-top: 0px;
+}
+
+.scroll .search-form__close {
+    display: block;
+    border: none;
+    background-image: url(images/close.png);
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 85px;
+    bottom: 11px;
+}
+
+.name_load {
+    width: 246px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    top: 330px;
+}
+
+.decr_load {
+    width: 156px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    top: 362px;
+}
+
+.name {
+    width: 262px;
+    min-height: 36px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.24);
+    position: absolute;
+    left: 20px;
+    top: 363px;
+}
+
+.decr {
+    width: 268px;
+    height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.24);
+    position: absolute;
+    left: 20px;
+    top: 410px;
+}
+
+.year {
+    width: 48px;
+    height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px; 
+    text-align: right;
+    color: rgba(255, 255, 255, 0.24);
+    position: absolute;
+    left: 234px;
+    top: 410px;
+}
+
+.description {
+    display: none;
+    height: 300px;
+    width: 302px;
+    position: absolute;
+    left: 0px;
+    top: 154px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.43%, rgba(0, 0, 0, 0.8) 72.41%);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.scroll .box:hover .description {
+    display: block;
+    cursor: pointer;
+}
+
+.search_live .box:hover .description {
+    display: block;
+    cursor: pointer;
+}
+
+.rating {
+    height: 38px;
+    width: 62px;
+    position: absolute;
+    left: 20px;
+    bottom: 136px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    z-index: 11;
+}
+
+.emoji {
+    height: 24px;
+	width: 24px;
+    padding-right: 6px;
+    z-index: 11;
+}
+
+.name_film {
+    max-height: 72px;
+    min-height: 38px;
+    width: 258px;
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    z-index: 11;
+}
+
+.janr {
+    height: 24px;
+    width: 168px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 11;
+}
+
+.year_film {
+    height: 24px;
+    width: 48px;
+    position: absolute;
+    left: 234px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    z-index: 11;
+}
+
+.scroll .help {
+    display: none;
+}
+
+.scroll .help_more_history {
+    display: none;
+}
+
